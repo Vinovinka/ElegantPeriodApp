@@ -1,10 +1,3 @@
-//
-//  Task.swift
-//  PeriodCalendarApp
-//
-//  Created by Виктория Виноградова on 07.10.2021.
-//
-
 import SwiftUI
 
 //Array of tasks...
