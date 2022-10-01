@@ -168,7 +168,10 @@ struct CustomDatePicker: View {
         // adding offset days to get exact week day, starts from Monday...
         let firstWeekday = calendar.component(.weekday, from: days.first?.date ?? Date())
         
-        for _ in 0..<firstWeekday - 2 {
+//        for _ in 0..<firstWeekday - 2 {
+//            days.insert(DateValue(day: -1, date: Date()), at: 0)
+//        }
+        for _ in stride(from: 0, to: firstWeekday - 2, by: 1) {
             days.insert(DateValue(day: -1, date: Date()), at: 0)
         }
         
@@ -177,28 +180,7 @@ struct CustomDatePicker: View {
 }
 
 struct CustomDatePicker_Previews: PreviewProvider {
-    
     static var previews: some View {
         ContentView()
-    }
-}
-
-//Extending Date to get Current Month Dates...
-extension Date {
-    func getAllDates() -> [Date] {
-        
-        let calendar = Calendar.current
-        
-        //getting start date...
-        let startDate = calendar.date(from: Calendar.current.dateComponents([.year, .month], from: self))!
-        
-        let range = calendar.range(of: .day, in: .month, for: startDate)!
-        
-        //getting date
-        return range.compactMap { day -> Date in
-            
-            return calendar.date(byAdding: .day, value: day - 1, to: startDate)!
-            
-        }
     }
 }

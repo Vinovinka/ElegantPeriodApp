@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E236D64428E89D8300ABEDE3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E236D64328E89D8300ABEDE3 /* DateExtension.swift */; };
 		E2F5D6B8270E1D6700B8889A /* PeriodCalendarAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F5D6B7270E1D6700B8889A /* PeriodCalendarAppApp.swift */; };
 		E2F5D6BA270E1D6700B8889A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F5D6B9270E1D6700B8889A /* ContentView.swift */; };
 		E2F5D6BC270E1D6B00B8889A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F5D6BB270E1D6B00B8889A /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E236D64328E89D8300ABEDE3 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		E2F5D6B4270E1D6700B8889A /* PeriodCalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeriodCalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F5D6B7270E1D6700B8889A /* PeriodCalendarAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCalendarAppApp.swift; sourceTree = "<group>"; };
 		E2F5D6B9270E1D6700B8889A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E236D64128E89C0B00ABEDE3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E2F5D6B7270E1D6700B8889A /* PeriodCalendarAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E236D64228E89D6A00ABEDE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E236D64328E89D8300ABEDE3 /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E2F5D6AB270E1D6700B8889A = {
 			isa = PBXGroup;
 			children = (
@@ -59,10 +77,10 @@
 		E2F5D6B6270E1D6700B8889A /* PeriodCalendarApp */ = {
 			isa = PBXGroup;
 			children = (
+				E236D64228E89D6A00ABEDE3 /* Extensions */,
+				E236D64128E89C0B00ABEDE3 /* App */,
 				E2F5D6C6270E1E5800B8889A /* Model */,
 				E2F5D6C5270E1E4A00B8889A /* View */,
-				E2F5D6B7270E1D6700B8889A /* PeriodCalendarAppApp.swift */,
-				E2F5D6B9270E1D6700B8889A /* ContentView.swift */,
 				E2F5D6BB270E1D6B00B8889A /* Assets.xcassets */,
 				E2F5D6BD270E1D6B00B8889A /* Preview Content */,
 			);
@@ -80,6 +98,7 @@
 		E2F5D6C5270E1E4A00B8889A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2F5D6B9270E1D6700B8889A /* ContentView.swift */,
 				E2F5D6C7270E1E7100B8889A /* Home.swift */,
 				E2F5D6C9270E255400B8889A /* CustomDatePicker.swift */,
 			);
@@ -166,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F5D6CA270E255400B8889A /* CustomDatePicker.swift in Sources */,
+				E236D64428E89D8300ABEDE3 /* DateExtension.swift in Sources */,
 				E2F5D6BA270E1D6700B8889A /* ContentView.swift in Sources */,
 				E2F5D6C8270E1E7100B8889A /* Home.swift in Sources */,
 				E2F5D6B8270E1D6700B8889A /* PeriodCalendarAppApp.swift in Sources */,

@@ -25,18 +25,16 @@ func getSampleDate(offset: Int) -> Date {
 //sample tasks...
 var tasks: [TaskMetaData] = [
     TaskMetaData(task: [
-        Task(title: "Talk to Justine"),
-        Task(title: "iPhone 13 Great Design Change"),
-        Task(title: "Nothing Much Workout "),
+        Task(title: "Period"),
     ], taskDate: getSampleDate(offset: -2)),
     TaskMetaData(task: [
-        Task(title: "Talk to Jane Erik"),
+        Task(title: "Period"),
     ], taskDate: getSampleDate(offset: -3)),
     TaskMetaData(task: [
-        Task(title: "Meeting with Alex"),
+        Task(title: "Period"),
     ], taskDate: getSampleDate(offset: -4)),
     TaskMetaData(task: [
-        Task(title: "Meeting with Alex"),
+        Task(title: "Period"),
     ], taskDate: getSampleDate(offset: -1)),
 ]
 
